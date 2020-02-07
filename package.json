@@ -8,8 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "node version-info.js"
+    "postinstall": "node version-info.js",
+    "now-build": "ng build --prod --output-path dist"
   },
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@angular-mdc/web": "^5.0.0-canary",
