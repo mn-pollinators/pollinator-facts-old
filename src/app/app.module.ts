@@ -14,7 +14,8 @@ import {
   MdcFabModule,
   MdcIconModule,
   MdcMenuModule,
-  MdcTopAppBarModule
+  MdcTopAppBarModule,
+  MdcSnackbarModule
 } from '@angular-mdc/web';
 import { AboutComponent } from './about/about.component';
 
@@ -23,7 +24,8 @@ const MDC_MODULES: any[] = [
   MdcFabModule,
   MdcIconModule,
   MdcMenuModule,
-  MdcTopAppBarModule
+  MdcTopAppBarModule,
+  MdcSnackbarModule
 ];
 
 @NgModule({
