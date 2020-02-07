@@ -3,7 +3,21 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  versionInfo: {
+    "infotype": "git-describe",
+    "gitinfo" : {
+      "dirty": false,
+      "raw": "devrawhash",
+      "hash": "devhash",
+      "distance": null,
+      "tag": null,
+      "semver": null,
+      "suffix": "devsuffix",
+      "semverString": null,
+    },
+    "version": "0.0.0"
+  }
 };
 
 /*

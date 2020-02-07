@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+$mdc-theme-primary: #4CAF50; // primary color
+$mdc-theme-secondary: #FFC107; // secondary color
+
+
+@use '@material/theme/variables'  with (
+  $primary: $mdc-theme-primary,
+  $secondary: $mdc-theme-secondary
+  );
+
+@use '_material';
+@use '@angular-mdc/theme/material';
+
+@use '@material/theme/color-palette' as material-color;
+
+//@use '@material/theme/color-palette' as material-color;
+
+body {
+  margin: 0;
+}
