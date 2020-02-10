@@ -4,12 +4,14 @@ $mdc-theme-primary: #4CAF50; // primary color
 $mdc-theme-secondary: #FFC107; // secondary color
 
 
-@use '@material/theme/variables'  with (
+@use '@material/theme'  with (
   $primary: $mdc-theme-primary,
   $secondary: $mdc-theme-secondary
-  );
+);
 
+// We should par this down to the elements we are using in the future.
 @use '_material';
+
 @use '@angular-mdc/theme/material';
 
 @use '@material/theme/color-palette' as material-color;
