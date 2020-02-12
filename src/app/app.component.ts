@@ -8,7 +8,7 @@ import { MdcSnackbar } from '@angular-mdc/web';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pollinator-facts';
+  title = 'Pollinator Facts';
 
   constructor( private updates: SwUpdate, private snackBar: MdcSnackbar) {}
 
