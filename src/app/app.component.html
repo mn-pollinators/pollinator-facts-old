@@ -5,10 +5,10 @@
   <mdc-drawer-content>
     <mdc-list>
       <mdc-list-item routerLink="/" routerLinkActive="mdc-list-item--activated" [routerLinkActiveOptions]="{exact:
-        true}" (click)="drawer.open = !drawer.open">
+        true}" (click)="drawer.open = false">
         <mdc-icon mdcListItemGraphic >home</mdc-icon>Home
       </mdc-list-item>
-      <mdc-list-item routerLink="/about" routerLinkActive="mdc-list-item--activated" (click)="drawer.open = !drawer.open">
+      <mdc-list-item routerLink="/about" routerLinkActive="mdc-list-item--activated" (click)="drawer.open = false">
         <mdc-icon mdcListItemGraphic >info</mdc-icon>About
       </mdc-list-item>
     </mdc-list>
