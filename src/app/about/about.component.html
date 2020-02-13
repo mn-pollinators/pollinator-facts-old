@@ -1,21 +1,24 @@
-<div fxLayout="column">
-  <h2 class="mat-display-1">About</h2>
-  <div>
+<div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-12">
+    <div mdcHeadline4>About</div>
+    <div mdcBody1>
       <p>Polinator Facts {{ env.versionInfo.version }} running on <code>{{doc.location.origin}}</code></p>
       <p>Git commit: <a [href]="repoURL + '/commit/' + env.versionInfo.gitinfo.hash"><code>{{env.versionInfo.gitinfo.hash}}</code></a></p>
       <p>Production build: {{env.production}}</p>
       <p *ngIf="env.versionInfo.infotype == 'now-github'">Deployed on ZEIT Now</p>
-  </div>
-  <div fxLayout="row">
+    </div>
+    <div>
       <p><a mdc-button [href]="repoURL">GitHub Repository</a></p>
-  </div>
+    </div>
 
 
-  <h2 class="mat-h2">Service Worker</h2>
-  <div>
-      Service Worker: {{this.updates.isEnabled ? "Enabled" : "Disabled" }}
-  </div>
-  <div fxLayout="row">
+    <div mdcHeadline5>Service Worker</div>
+    <div mdcBody1>
+      <p>Service Worker: {{this.updates.isEnabled ? "Enabled" : "Disabled" }}</p>
+    </div>
+    <div>
       <button [disabled]="!this.updates.isEnabled" mdc-button (click)="updates.checkForUpdate()">Check for Updates</button>
+    </div>
   </div>
 </div>
+

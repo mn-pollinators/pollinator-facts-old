@@ -10,6 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 import {
+  MdcTypographyModule,
   MdcButtonModule,
   MdcFabModule,
   MdcIconModule,
@@ -22,6 +23,7 @@ import {
 import { AboutComponent } from './about/about.component';
 
 const MDC_MODULES: any[] = [
+  MdcTypographyModule,
   MdcButtonModule,
   MdcFabModule,
   MdcIconModule,

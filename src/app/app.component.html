@@ -1,3 +1,16 @@
+<mdc-top-app-bar fixed #topbar [scrollTarget]="mainContent">
+  <mdc-top-app-bar-row>
+    <mdc-top-app-bar-section align="start" title="Pollinator Facts">
+      <button mdcTopAppBarNavIcon (click)="drawer.open = !drawer.open">
+        <mdc-icon>menu</mdc-icon>
+      </button>
+    </mdc-top-app-bar-section>
+    <mdc-top-app-bar-section align="end">
+      <!--<button mdcTopAppBarActionItem routerLink="/about"><mdc-icon>help_outline</mdc-icon></button>-->
+    </mdc-top-app-bar-section>
+  </mdc-top-app-bar-row>
+</mdc-top-app-bar>
+
 <mdc-drawer drawer="modal" #drawer class="app-drawer">
   <mdc-drawer-header>
     <h3 mdcDrawerTitle>Pollinator Facts</h3>
@@ -14,21 +27,9 @@
     </mdc-list>
   </mdc-drawer-content>
 </mdc-drawer>
-<div class="mdc-drawer-scrim"></div>
 
-<mdc-top-app-bar fixed #topbar [scrollTarget]="mainContent">
-  <mdc-top-app-bar-row>
-    <mdc-top-app-bar-section align="start" title="Pollinator Facts">
-      <button mdcTopAppBarNavIcon (click)="drawer.open = !drawer.open">
-        <mdc-icon>menu</mdc-icon>
-      </button>
-    </mdc-top-app-bar-section>
-    <mdc-top-app-bar-section align="end">
-      <!--<button mdcTopAppBarActionItem routerLink="/about"><mdc-icon>help_outline</mdc-icon></button>-->
-    </mdc-top-app-bar-section>
-  </mdc-top-app-bar-row>
-</mdc-top-app-bar>
-
-<div #mainContent class="main-content">
-  <router-outlet></router-outlet>
+<div #mainContent class="main-content" mdcTopAppBarFixedAdjust>
+  <div class="mdc-layout-grid">
+    <router-outlet></router-outlet>
+  </div>
 </div>
