@@ -21,6 +21,8 @@ import {
   MdcDrawerModule
 } from '@angular-mdc/web';
 import { AboutComponent } from './about/about.component';
+import { FactPageComponent } from './fact-page/fact-page.component';
+import { FactCardComponent } from './fact-card/fact-card.component';
 
 const MDC_MODULES: any[] = [
   MdcTypographyModule,
@@ -37,7 +39,9 @@ const MDC_MODULES: any[] = [
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    FactPageComponent,
+    FactCardComponent
   ],
   imports: [
     BrowserModule,
